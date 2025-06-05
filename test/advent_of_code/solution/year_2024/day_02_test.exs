@@ -5,7 +5,7 @@ defmodule AdventOfCode.Solution.Year2024.Day02Test do
 
   setup do
     [
-      input:
+      parsed_input:
         """
         7 6 4 2 1
         1 2 7 8 9
@@ -18,14 +18,14 @@ defmodule AdventOfCode.Solution.Year2024.Day02Test do
     ]
   end
 
-  test "part1", %{input: input} do
-    result = part1(input)
+  test "part1", %{parsed_input: parsed_input} do
+    result = part1(parsed_input)
 
     assert result == 2
   end
 
-  test "part2", %{input: input} do
-    result = part2(input)
+  test "part2", %{parsed_input: parsed_input} do
+    result = part2(parsed_input)
 
     assert result == 4
   end
